@@ -1,8 +1,8 @@
 package com.junil.apis.service;
 
 import com.junil.apis.model.User;
-import com.junil.apis.repository.UserRepository;
 import com.junil.apis.vo.UserRegisterVO;
+import com.junil.apis.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 

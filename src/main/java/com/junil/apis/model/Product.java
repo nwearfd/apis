@@ -37,6 +37,10 @@ public class Product {
         this.Price = Price;
     }
 
+    public Product() {
+
+    }
+
     @Override
     public String toString() {
         return String.format(

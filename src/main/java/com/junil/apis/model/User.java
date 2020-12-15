@@ -30,6 +30,10 @@ public class User {
         this.phone = phone;
     }
 
+    public User() {
+        
+    }
+
     @Override
     public String toString(){
         return String.format(
@@ -38,4 +42,3 @@ public class User {
         );
     }
 }
-

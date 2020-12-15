@@ -40,6 +40,10 @@ public class Sale {
         this.amount = amount;
     }
 
+    public Sale() {
+
+    }
+
     @Override
     public String toString() {
         return String.format(

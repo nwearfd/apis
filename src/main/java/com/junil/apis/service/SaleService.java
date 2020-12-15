@@ -1,5 +1,6 @@
 package com.junil.apis.service;
 
+import com.junil.apis.model.Product;
 import com.junil.apis.model.Sale;
 import com.junil.apis.repository.SaleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
