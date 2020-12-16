@@ -9,13 +9,12 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int productId;
 
-    @Column(length  = 80, nullable = false)
+    @Column(length = 80, nullable = false)
     private String name;
 
     @Column
@@ -23,29 +22,23 @@ public class Product {
 
     @Column
     private int listPrice;
-    @Column
-    private int Price;
 
-    @Column(length = 12)
-    private String phone;
+    @Column
+    private int price;
 
     @Builder
-    public Product(String name, String description,int listPrice, int Price){
+    public Product(String name, String description, int listPrice, int price) {
         this.name = name;
         this.description = description;
         this.listPrice = listPrice;
-        this.Price = Price;
-    }
-
-    public Product() {
-
+        this.price = price;
     }
 
     @Override
     public String toString() {
         return String.format(
-                "User[productId='%s', name='%s', description='%s', listPrice=%d Price=%d]",
-                this.productId, this.name, this.description, this.listPrice, this.Price
+                "Product[productId='%s', name='%s', description='%s', listPrice=%d, price=%d]",
+                this.productId, this.name, this.description, this.listPrice, this.price
         );
     }
 }
